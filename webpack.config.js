@@ -55,7 +55,7 @@ module.exports = {
     },
     plugins: [
         new webpack.ProvidePlugin({ //加载jq
-            $: 'jquery'
+            $: 'jquery'////这个可以使jquery变成全局变量，妮不用在自己文件require('jquery')了
         }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendors', // 将公共模块提取，生成名为`vendors`的chunk
